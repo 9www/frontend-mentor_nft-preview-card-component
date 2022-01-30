@@ -1,0 +1,134 @@
+@import "../../../../styles/variable.scss";
+
+.cards-container {
+    a {
+        text-decoration: none;
+    }
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    background-color: $very-dark-blue-card-bg;
+    border-radius: 3%;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    box-shadow: 0px 10px 20px $very-dark-blue-main-bg, 0px 10px 30px black;
+    //filter: drop-shadow(0 0 10px $very-dark-blue-card-bg);
+    .cards-images-container {
+        position: relative;
+        width: 100%;
+      
+            .cards-image {
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 3%;
+            }
+
+            .cards-image-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($cyan, 0.3);
+                border-radius: 3%;
+                opacity: 0;
+                &:hover {
+                    opacity: 1;
+              
+                }
+                .cards-image-overlay-icon{
+                    position: absolute; 
+                    top: 0;             
+                    bottom: 0;           
+                    left: 0;        
+                    right: 0;
+                    margin: auto;  
+                }
+              
+            }
+       
+    }
+
+    .cards-detail-container {
+        padding-top: 15px;
+
+        .cards-title {
+            color: $white;
+            font-weight: 400;
+            font-size: 20px;
+            &:hover {
+                color: $cyan;
+            }
+        }
+
+        .cards-description {
+            padding-top: 15px;
+            color: $soft-blue;
+            font-weight: 300;
+            line-height: 22px;
+        }
+        .cards-price-time-container {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            padding-top: 15px;
+            .cards-price-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .cards-price-icon {
+                    padding-right: 5px;
+                }
+                .cards-price {
+                    color: $cyan;
+                }
+            }
+            .cards-time-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .cards-time-icon {
+                    padding-right: 5px;
+                }
+                .cards-time {
+                    color: $soft-blue;
+                }
+            }
+        }
+    }
+    .cards-line {
+        padding-top: 15px;
+        width: 100%;
+        border-bottom: 1px solid $very-dark-blue-line;
+    }
+    .cards-creator-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 15px;
+        font-size: 14px;
+        .cards-icon {
+            background-color: $white;
+            border-radius: 100%;
+            padding: 1px;
+            width: 10%;
+        }
+        .cards-creator {
+            padding-left: 15px;
+            display: flex;
+            flex-direction: row;
+            color: $soft-blue;
+            .cards-name {
+                color: $white;
+                padding-left: 5px;
+                &:hover {
+                    color: $cyan;
+                }
+            }
+        }
+    }
+}
