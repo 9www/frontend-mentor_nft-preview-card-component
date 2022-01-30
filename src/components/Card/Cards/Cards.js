@@ -7,7 +7,7 @@ function Cards() {
             <a className="cards-images-container" href="./">
                 <img
                     className="cards-image"
-                    src="./images/image-Equilibrium.jpg"
+                    src="./images/image-equilibrium.jpg"
                 ></img>
                 <div className="cards-image-overlay">
                     <img
