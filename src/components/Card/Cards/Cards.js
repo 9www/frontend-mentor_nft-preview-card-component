@@ -8,11 +8,13 @@ function Cards() {
                 <img
                     className="cards-image"
                     src="./images/image-equilibrium.jpg"
+                    alt="cardImage"
                 ></img>
                 <div className="cards-image-overlay">
                     <img
                         className="cards-image-overlay-icon"
                         src="./images/icon-view.svg"
+                        alt="view"
                     ></img>
                 </div>
             </a>
@@ -28,6 +30,7 @@ function Cards() {
                         <img
                             className="cards-price-icon"
                             src="./images/icon-ethereum.svg"
+                            alt="eth"
                         ></img>
                         <div className="cards-price">0.041ETH</div>
                     </div>
@@ -35,6 +38,7 @@ function Cards() {
                         <img
                             className="cards-time-icon"
                             src="./images/icon-clock.svg"
+                            alt="clock"
                         ></img>
                         <div className="cards-time">3 days left</div>
                     </div>
@@ -45,6 +49,7 @@ function Cards() {
                 <img
                     className="cards-icon"
                     src="./images/image-avatar.png"
+                    alt="icon"
                 ></img>
                 <div className="cards-creator">
                     Creation of{" "}
